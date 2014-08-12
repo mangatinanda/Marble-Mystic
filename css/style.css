@@ -1,0 +1,135 @@
+body{
+	background:#000;
+}
+#wrapper{
+	width:800px;
+	margin: 0px auto;
+	text-align: center;
+}
+#wrapper>img{
+	padding-top: 5px;
+}
+.header>h1{
+	font-family: chiller;
+	font-size: 48px;
+	color: lightgreen;
+}
+#gameStats{
+	text-align: center;
+	visibility: hidden;
+}
+.buttonBg{
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-o-border-radius: 25px;
+	-ms-border-radius: 25px;
+	border-radius: 25px;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D5E499', endColorstr='#7ABB43',GradientType=0 );
+	background: white;
+	background: -webkit-linear-gradient(#082603,#D5E499,#7ABB43,#082603);
+	background: -o-linear-gradient(#082603,#D5E499,#7ABB43,#082603);
+	background: -moz-linear-gradient(#082603,#D5E499,#7ABB43,#082603);
+	background: linear-gradient(#082603,#D5E499,#7ABB43,#082603);
+}
+#gameStats>div{
+	width: 164px;
+	height: 42px;
+	margin: 0px 110px;
+	padding-top: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	display: inline-block;
+}
+#gameStats>div>span{
+	font-size: 24px;
+	color: #bb0000;
+}
+#gameArea{
+	margin: 9px 0px;
+}
+#gameInfo{
+	width: 380px;
+    height: 290px;
+    padding:10px;
+    background-color: #392e28;
+    opacity:0.8;
+    z-index: 2;
+    position: absolute;
+    left: 200px;
+    top: 60px;
+    display: none;
+}
+#gameInfo>p{
+    font-size: 20px;
+    color: white;
+}
+#gameInfo>p>span{
+	color: red;
+	font-size: 24px;
+}
+#topCover{
+	padding-bottom: 17px;
+}
+#board{
+	width: 490px;
+	margin: 0 auto;
+	display: none;
+}
+#board>div{
+	width:70px;
+	height:70px;
+	float: left;
+}
+#board>div>img{
+	padding-top: 10px;
+	cursor: pointer;
+}
+#board>div.giveBg{
+	background: url(../images/holder.png);
+	background-repeat: no-repeat; 
+	text-align: center;
+}
+.btn{
+	border: none;
+	font-weight: bold;
+	outline: 0;
+	cursor: pointer;
+}
+#gameControls>input{
+	width:125px;
+	height:36px;
+	margin: 10px 40px;
+	border: none;
+	font-weight: bold;
+	outline: 0;
+	cursor: pointer;
+}
+#overlay{
+	background: black;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: 1;
+	display: none;
+}
+#modal{
+	padding: 5px;
+	position: absolute;
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+	z-index: 2;
+	text-align: center;
+	width: 450px;
+	display: none;
+}
+#modal>button{
+	margin: 10px 0px;
+	width: 88px;
+	height: 25px;
+}

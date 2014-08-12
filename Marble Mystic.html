@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marble Mystic</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<img src="images/logo.png" alt="Logo" />
+		<div id="gameStats">
+			<div class="buttonBg">Marbles Remaining:<br/><span id="remMarble">31</span></div>
+			<div class="buttonBg">Time<br/><span id="time">00:00:00</span></div>
+		</div>
+		<div id="gameInfo">
+			<p>
+				<span>How to Play ?</span><br>Aim is to clear the board by jumping over the marbles with other marbles. The 'jumped' over marbles will be removed. The jumps can be vertical or horizontal. You win when you remove all but the last marbles.<br>
+				<img src="images/demo.png" alt="Demo Image"/><br>Possible jumps are shown when clicked on a marble, click on to make a move!<br>Yes you can! Go ahead! Give it a try!<br/>
+				<input type="button" value="OK" id="gameInfoOkBtn"/>
+			</p>
+		</div>
+		<div id="gameArea">
+			<div id="topCover"><img src="images/game-cover.png" alt="Top Cover"></div>
+			<div id="board">
+				<div id='0'></div>
+				<div id='1'></div>
+				<div class="giveBg" id='2'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='3'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='4'><img src="images/marble.png" alt="marble"/></div>
+				<div id='5'></div>
+				<div id='6'></div>
+				<div id='10'></div>
+				<div id='11'></div>
+				<div class="giveBg" id='12'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='13'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='14'><img src="images/marble.png" alt="marble"/></div>
+				<div id='15'></div>
+				<div id='16'></div>
+				<div class="giveBg" id='20'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='21'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='22'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='23'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='24'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='25'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='26'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='30'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='31'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='32'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='33'></div>
+				<div class="giveBg" id='34'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='35'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='36'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='40'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='41'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='42'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='43'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='44'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='45'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='46'><img src="images/marble.png" alt="marble"/></div>
+				<div id='50'></div>
+				<div id='51'></div>
+				<div class="giveBg" id='52'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='53'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='54'><img src="images/marble.png" alt="marble"/></div>
+				<div id='55'></div>
+				<div id='56'></div>
+				<div id='60'></div>
+				<div id='61'></div>
+				<div class="giveBg" id='62'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='63'><img src="images/marble.png" alt="marble"/></div>
+				<div class="giveBg" id='64'><img src="images/marble.png" alt="marble"/></div>
+				<div id='65'></div>
+				<div id='66'></div>
+				<div style="clear:both;width:0px;height:0px;"></div>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		<div id="gameControls">
+			<input type="button" id="playBtn" value="Play" class="buttonBg">
+			<input type="button" id="undoBtn" value="Undo" class="buttonBg" style="display:none">
+			<input type="button" id="resetBtn" value="Reset" class="buttonBg" style="display:none">
+			<input type="button" id="howToBtn" value="How To Play?" class="buttonBg">
+		</div>
+		<div id="overlay"></div>
+		<div id="modal"><p id="modalText"></p><button class="btn buttonBg" id="onModalOkBtn">Ok</button></div>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
